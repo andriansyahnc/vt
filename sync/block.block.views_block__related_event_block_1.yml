@@ -1,0 +1,33 @@
+uuid: dde9e671-12e8-4996-b909-65b854b7deba
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_event
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__related_event_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:related_event-block_1'
+settings:
+  id: 'views_block:related_event-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

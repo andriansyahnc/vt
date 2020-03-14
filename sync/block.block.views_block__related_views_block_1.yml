@@ -1,0 +1,32 @@
+uuid: fecff5fb-b191-43d6-8479-8ab58c1cd900
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_views
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__related_views_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:related_views-block_1'
+settings:
+  id: 'views_block:related_views-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
