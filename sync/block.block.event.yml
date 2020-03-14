@@ -1,0 +1,26 @@
+uuid: 4a83632d-211e-4466-b4c4-8c4f15800f6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - vt_block
+  theme:
+    - bartik
+id: event
+theme: bartik
+region: content
+weight: 1
+provider: null
+plugin: event
+settings:
+  id: event
+  label: Event
+  provider: vt_block
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

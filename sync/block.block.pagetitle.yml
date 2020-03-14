@@ -1,0 +1,28 @@
+uuid: f28738f3-76ed-4a68-ad7a-78a51b47ec0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - bartik
+id: pagetitle
+theme: bartik
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+      news: news
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

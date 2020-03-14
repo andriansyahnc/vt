@@ -66,7 +66,7 @@ class Event extends BlockBase implements ContainerFactoryPluginInterface {
       /** @var \Drupal\file\FileInterface $file */
       $file = $node->get('event_image')->entity;
       $event_image = file_create_url($file->getFileUri());
-      $build['content'][] = [
+      $build['content'][$node->id()] = [
         'event_title' => $node->getTitle(),
         'event_date' => $event_date,
         'event_description' => $node->get('event_description')->value,

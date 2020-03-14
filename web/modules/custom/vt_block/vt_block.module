@@ -40,5 +40,11 @@ function vt_block_theme() {
       ],
       'render element' => 'children',
     ],
+    'news' => [
+      'variables' => [
+        'content' => NULL
+      ],
+      'render element' => 'children',
+    ],
   ];
 }

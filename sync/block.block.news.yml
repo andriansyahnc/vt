@@ -1,0 +1,26 @@
+uuid: 0f97a5e6-4091-4444-8325-a0f4e338ebbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - vt_block
+  theme:
+    - bartik
+id: news
+theme: bartik
+region: content
+weight: 2
+provider: null
+plugin: news
+settings:
+  id: news
+  label: News
+  provider: vt_block
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
