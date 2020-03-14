@@ -1,0 +1,22 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+] %}
+<div{{ attributes.addClass(classes) }}>
+    {% for value in content %}
+      <p>{{value.event_image}}</p>
+      <p>{{value.event_date}}</p>
+      <p>{{value.title}}</p>
+      <p>{{value.event_description}}</p>
+      <p>{{value.link}}</p>
+    {% endfor %}
+</div>
