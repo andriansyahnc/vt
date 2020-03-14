@@ -1,0 +1,28 @@
+uuid: fb956eae-06ea-4d0a-8ec3-2d13d69dd78a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.category
+    - field.field.node.event.event_date
+    - field.field.node.event.event_description
+    - field.field.node.event.event_image
+    - node.type.event
+  module:
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  category: true
+  event_date: true
+  event_description: true
+  event_image: true

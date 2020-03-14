@@ -1,0 +1,21 @@
+uuid: 610c1b2d-99b4-4b86-9cd1-32a8369fcf96
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - node
+id: node.event_date
+field_name: event_date
+entity_type: node
+type: daterange
+settings:
+  datetime_type: date
+  optional_end_date: 1
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
