@@ -6,5 +6,6 @@ How to install for new user:
 - install dependency using `composer install`
 - copy the default settings using `cp web/sites/default/default.settings.php web/sites/settings.php`
 - install the project using `vendor/bin/drush si --existing-config`
+- drop the db using `vendor/bin/drush sql-drop`
 - import the db using `vendor/bin/drush sql-cli < vox_teneo_20200314_055754.sql`
 - start the server using `vendor/bin/drush runserver`
