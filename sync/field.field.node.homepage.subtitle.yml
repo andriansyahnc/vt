@@ -1,0 +1,19 @@
+uuid: 7aaccadf-1f81-446f-be6f-f101cdb38871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.subtitle
+    - node.type.homepage
+id: node.homepage.subtitle
+field_name: subtitle
+entity_type: node
+bundle: homepage
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

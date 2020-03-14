@@ -1,0 +1,30 @@
+uuid: 290c0f8d-d1b9-47c6-a370-61d1349e9da9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - vt_block
+  theme:
+    - bartik
+id: homepage
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: homepage
+settings:
+  id: homepage
+  label: Homepage
+  provider: vt_block
+  label_display: '0'
+  title: 'Welcome to Vox Teneo'
+  subtitle: 'We create effective solutions'
+  image:
+    - '4'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
